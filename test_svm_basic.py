@@ -94,8 +94,8 @@ def print_confusion_matrix(labels, hypotheses):
     print ('\tYES\t', fn, '\t', tp)
     print ('-----------------------------')
     
-X, Y = get_data('linearly_separable.csv')
-dataArr, labelArr = loadDataSet('linearly_separable.csv')
+X, Y = get_data('linearly_separable_train.csv')
+dataArr, labelArr = loadDataSet('linearly_separable_train.csv')
 
 clf = svm_basic()
 w = clf.fit(dataArr, labelArr)
